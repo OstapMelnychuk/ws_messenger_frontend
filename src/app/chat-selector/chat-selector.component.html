@@ -1,0 +1,8 @@
+<ul class="list-group list-group-flush" *ngIf="chatsLoaded | async">
+  <li class="chat" *ngFor="let chat of chats" (click)="setChatId(chat)">
+    <strong>{{chat.chatName}}: </strong>
+    <span>{{chat.chatDescription}}</span>
+  </li>
+</ul>
+<button class="btn btn-primary" (click)="setChatIdToZero()">Back</button>
+<app-chat *ngIf="chatId != 0" [chatId]="chatId"></app-chat>

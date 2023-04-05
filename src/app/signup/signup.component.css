@@ -1,0 +1,13 @@
+.login-form {
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-top: 10%;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10%;
+  margin-left: 10%;
+  margin-top: 2%;
+}
